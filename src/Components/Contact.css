@@ -38,11 +38,10 @@
 .map__text-container a:hover {
     color: var(--primary);
 }
-.map__text-container img {
+.phone-icon, .map-pin-icon {
     width: 20px;
-}
-#trucazo {
-    opacity: 0;
+    height: 20px;
+    color: var(--black);
 }
 @media screen and (max-width:768px) {
     .contact {
