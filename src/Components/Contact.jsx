@@ -10,7 +10,7 @@ function Contact() {
             <h3>Contáctanos para Consulta Gratuita</h3>
             <p>¿Listo para dar el siguiente paso? ¡Nos encantaría escuchar de ti! Completa nuestro formulario de contacto y uno de nuestros expertos en construcción eléctrica se pondrá en contacto contigo en breve. Estamos aquí para ayudarte a iluminar tus proyectos y responder a todas tus preguntas. ¡Construyamos juntos un futuro más brillante!</p>
             <Form/>
-            <a href="mailto:whyjonpapayon@gmail.com" id="trucazo">mail</a>
+            <a href="mailto:contacto@electricaielec.com" id="trucazo">mail</a>
         </div>
         <div className="contact__map-container">
         {/* <iframe

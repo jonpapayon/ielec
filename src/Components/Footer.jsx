@@ -3,7 +3,7 @@ import './Footer.css'
 function Footer() {
   return (
     <footer>
-    <h2>TOP VIAJES</h2>
+    <h2>IELEC</h2>
         <ul>
             <li><a href="index.html#services">Servicios</a></li>
             <li><a href="index.html#contact">Cotizar Ahora</a></li>
