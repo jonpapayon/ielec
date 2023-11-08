@@ -4,10 +4,12 @@ import Home from './pages/Home'
 import Navbar from './Components/Navbar'
 import NotFound from './Components/NotFound'
 import Footer from './Components/Footer'
+import Service from './pages/Service'
 
 const AppRoutes = () => {
   let routes = useRoutes([
     { path: '/', element: <Home /> },
+    { path: '/service', element: <Service /> },
     { path: '/*', element: <NotFound /> }
   ])
   return routes

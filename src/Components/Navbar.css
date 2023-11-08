@@ -60,6 +60,10 @@ nav {
     height: 40px;
     color: var(--black);
 }
+.x-circle-icon {
+    width: 20px;
+    height: 20px;
+}
 @media screen and (max-width: 768px) {
     .menu__icon, .menu--close {
         display: block;

@@ -1,0 +1,55 @@
+.hero-services {
+    padding: 80px 120px;
+    background-color: var(--light-primary);
+}
+
+@media screen and (max-width: 768px) {
+    .hero-services {
+        padding: 80px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .hero-services {
+        padding: 80px 40px;
+    }
+}
+.talk {
+    background-color: var(--primary);
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.talk h2 {
+    font-size: 62px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 0px;
+    margin-bottom: 10px;
+}
+.talk p {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0px;
+}
+.secundary-button {
+    font-size: 16px;
+    padding: 10px 30px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+}
+.secundary-button:hover {
+    background-color: var(--very-dark-primary);
+    border: var(--very-dark-primary);
+}
+@media screen and (max-width: 425px) {
+    .talk {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+}
