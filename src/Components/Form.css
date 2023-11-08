@@ -38,7 +38,3 @@ form {
 .contact__form .primary-button--submit:hover {
     background-color: var(--dark-primary);
 }
-.contact__map-container {
-    background-color: var(--light-primary);
-    width: 50%;
-}

@@ -10,7 +10,10 @@
     flex-direction: column;
     gap: 10px;
 }
-
+.contact__map-container {
+    background-color: var(--light-primary);
+    width: 50%;
+}
 .map__text-container {
     padding: 40px;
     display: flex;
