@@ -1,0 +1,14 @@
+.primary-button {
+    margin: 0 10px;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    background-color: var(--primary);
+    text-decoration: none;
+    color: #fff;
+}
+.primary-button:hover {
+    background-color: var(--dark-primary);
+}
