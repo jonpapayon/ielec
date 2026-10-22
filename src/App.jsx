@@ -1,31 +1,30 @@
-import { useRoutes, BrowserRouter } from 'react-router-dom'
-import './App.css'
+import { useEffect } from 'react'
+import { BrowserRouter, useRoutes, useLocation } from 'react-router-dom'
 import Home from './pages/Home'
-import Navbar from './Components/Navbar'
-import NotFound from './Components/NotFound'
-import Footer from './Components/Footer'
 import Service from './pages/Service'
+import Navbar from './Components/Navbar'
+import Footer from './Components/Footer'
+import NotFound from './Components/NotFound'
 
-const AppRoutes = () => {
-  let routes = useRoutes([
+function AppRoutes() {
+  const { pathname, hash } = useLocation()
+  useEffect(() => {
+    if (hash) setTimeout(() => document.querySelector(hash)?.scrollIntoView(), 60)
+    else window.scrollTo(0, 0)
+  }, [pathname, hash])
+  return useRoutes([
     { path: '/', element: <Home /> },
     { path: '/service', element: <Service /> },
-    { path: '/*', element: <NotFound /> }
+    { path: '/*', element: <NotFound /> },
   ])
-  return routes
 }
 
-function App() {
-
+export default function App() {
   return (
-    <>
-      <BrowserRouter>
-        <AppRoutes/>
-        <Navbar/>
-        <Footer/>
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <Navbar />
+      <AppRoutes />
+      <Footer />
+    </BrowserRouter>
   )
 }
-
-export default App
